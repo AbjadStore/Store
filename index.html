@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>مكتبة أبجد</title>
+  <meta name="description" content="اختر الملازم التي تحتاجها وأرسل طلبك إلى مكتبة أبجد عبر واتساب.">
+  <meta name="theme-color" content="#14284B">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="أبجد">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" class="shell" hidden>
+    <header class="top">
+      <a class="brand" href="#notebooks" aria-label="أبجد - الصفحة الرئيسية">أبجد</a>
+      <a class="who" id="who" href="#me"></a>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <div id="cartbar" class="cartbar" hidden></div>
+
+    <nav class="tabs" aria-label="التنقل الرئيسي">
+      <a href="#notebooks" data-tab="notebooks">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6zM6 3v18M10 8h5M10 12h5"/></svg>
+        <span>الملازم</span>
+      </a>
+      <a href="#exercises" data-tab="exercises">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19zM14 7l3 3"/></svg>
+        <span>التدريبات</span>
+      </a>
+      <a href="#me" data-tab="me">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+        <span>حسابي</span>
+      </a>
+    </nav>
+  </div>
+
+  <div id="overlay"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p class="noscript">يحتاج الموقع إلى تفعيل JavaScript حتى يعمل.</p></noscript>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

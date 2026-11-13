@@ -1,0 +1,20 @@
+{
+  "exercises": [
+    {
+      "id": "ex-p3-math-ops",
+      "title": "تدريب العمليات الحسابية",
+      "description": "خمسة أسئلة على الجمع والطرح والضرب",
+      "grade": "p3",
+      "subject": "math",
+      "file": "exercises/p3-math-ops.html"
+    },
+    {
+      "id": "ex-p5-science-states",
+      "title": "حالات المادة",
+      "description": "اختبر معلوماتك عن المادة الصلبة والسائلة والغازية",
+      "grade": "p5",
+      "subject": "science",
+      "file": "exercises/p5-science-states.html"
+    }
+  ]
+}
